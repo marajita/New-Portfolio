@@ -1,0 +1,36 @@
+body {
+  background-color: #181919;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#landing {
+  height: 100vh;
+  background-image: url("../images/crissXcross.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  padding: 60px 100px 40px;
+}
+#mainText {
+  margin-top: 10vh;
+}
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 45px 0 18px;
+  margin-bottom: 20px;
+}
+
+.waves-effect {
+  margin-right: 20px;
+}
+#contact {
+  background-color: #dddddd;
+  margin-top: 20px;
+}
+#contactForm {
+  color: #4aaaa5;
+}
