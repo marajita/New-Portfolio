@@ -13,9 +13,6 @@ body {
   z-index: -1;
   padding: 60px 100px 40px;
 }
-#mainText {
-  margin-top: 10vh;
-}
 
 p {
   font-size: 18px;
@@ -28,9 +25,10 @@ p {
   margin-right: 20px;
 }
 #contact {
-  background-color: #dddddd;
-  margin-top: 20px;
-}
-#contactForm {
-  color: #4aaaa5;
+  background-image: url("../images/crissXcross.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
 }
