@@ -1,6 +1,12 @@
 $(document).ready(function() {
   //   $(".parallax").parallax();
 
+  //initializing M
+  //window.Materialize.toast('I am a toast!', 4000)
+  //var M = window.Materialize;
+
+  //M.AutoInit();
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyA44cuiO_1s-lL80kxSOCEZRRuPt06--9g",
@@ -34,12 +40,30 @@ $(document).ready(function() {
       .trim();
     console.log(name + " | " + email + " | " + message);
     // Code for "Setting values in the database"
-    database.ref().push({
-      name: name,
-      email: email,
-      message: message,
-      dateAdded: firebase.database.ServerValue.TIMESTAMP
-    });
+    if (name.length > 0 && email.length > 0 && message.length > 0) {
+      database.ref().push(
+        {
+          name: name,
+          email: email,
+          message: message,
+          dateAdded: firebase.database.ServerValue.TIMESTAMP
+        },
+        function(error) {
+          if (error) {
+            window.Materialize.toast("Failed!!", 2000, "deep-orange accent-3");
+            console.log("Errors handled: " + error.code);
+          } else {
+            window.Materialize.toast("I got your message", 2000, "green");
+          }
+        }
+      );
+    } else {
+      window.Materialize.toast(
+        "All fields are required!!",
+        2000,
+        "red darken-1"
+      );
+    }
 
     // Firebase watcher + initial loader HINT: .on("value")
     // database.ref().on(

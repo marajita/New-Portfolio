@@ -32,3 +32,9 @@ p {
   background-attachment: fixed;
   z-index: -1;
 }
+
+input,
+select,
+textarea {
+  color: whitesmoke;
+}

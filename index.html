@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Rajita Maharjan</title>
     <!--fontawesome-->
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,12 +23,19 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
     <!--Javascript-->
     <script src="javascript/app.js"></script>
   </head>
@@ -40,7 +48,7 @@
           <div class="nav-wrapper">
             <a href="#top" class="brand-logo">Rajita Maharjan </a>
             <ul class="right hide-on-med-and-down" id="navList">
-              <li><a href="#landing">Home</a></li>
+              <li><a href="#top">Home</a></li>
               <li><a href="#project">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
@@ -95,34 +103,31 @@
           <a
             href="https://github.com/marajita"
             target="_blank"
-            class="btn-floating blue-blue darken-3"
+            class="btn-floating black darken-3"
           >
             <i class="fa fa-github"></i
           ></a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/rajita-maharjan-38922a109"
+            href="https://www.linkedin.com/in/rajita-maharjan-38922a109/"
             target="_blank"
-            class="btn-floating blue-grey lighten-1"
+            class="btn-floating blue lighten-1"
             ><i class="fa fa-linkedin"></i
           ></a>
         </li>
       </ul>
     </div>
     <!--Work-->
-
     <div class="section" style="background-color: #141414;" id="project">
       <div class="container">
+        <br />
         <h3 class="header text_b center">My Projects</h3>
         <div class="row ">
           <div class="col s12 m12 l4">
             <div class="card  black">
               <div class="card-image waves-effect waves-block waves-light">
-                <img
-                  class="activator"
-                  src="../New-Portfolio/images/timer.jpg"
-                />
+                <img class="activator" src="assets/images/timer.jpg" />
               </div>
               <div class="card-content">
                 <span class="card-title activator purple-text text-lighten-5"
@@ -150,8 +155,13 @@
                   >Trivia-Game <i class="mdi-navigation-close right"></i
                 ></span>
                 <p>
-                  Here is some more information about this project that is only
-                  revealed once clicked on.
+                  This application have a trivia form with multiple choice
+                  option. The player will have a limited amount of time to
+                  finish the quiz. It has a countdown timer. The game ends when
+                  the time runs out. The page will reveal the number of
+                  questions that players answer correctly and incorrectly.
+                  Players are allowed to pick no more than one answer per
+                  question.
                 </p>
               </div>
             </div>
@@ -159,7 +169,7 @@
           <div class="col s12 m12 l4">
             <div class="card  black">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="../New-Portfolio/images/map.jpg" />
+                <img class="activator" src="assets/images/map.jpg" />
               </div>
               <div class="card-content">
                 <span class="card-title activator purple-text text-lighten-5"
@@ -187,8 +197,11 @@
                   >Travel-Project <i class="mdi-navigation-close right"></i
                 ></span>
                 <p>
-                  Here is some more information about this project that is only
-                  revealed once clicked on.
+                  The application helps people to travel smart and achieve more.
+                  Travelers can enter their location (or enable location
+                  services) and enter a destination (or click on a random area
+                  on a world map). The search results will return the cheapest
+                  flight, cheapest hotel and things to do in the destination.
                 </p>
               </div>
             </div>
@@ -196,10 +209,7 @@
           <div class="col s12 m12 l4">
             <div class="card  black">
               <div class="card-image waves-effect waves-block waves-light">
-                <img
-                  class="activator"
-                  src="../New-Portfolio/images/train.png"
-                />
+                <img class="activator" src="assets/images/train.jpg" />
               </div>
               <div class="card-content">
                 <span class="card-title activator purple-text text-lighten-5"
@@ -227,8 +237,12 @@
                   >Train-Scheduler <i class="mdi-navigation-close right"></i
                 ></span>
                 <p>
-                  Here is some more information about this project that is only
-                  revealed once clicked on.
+                  This is a train schedule application that incorporates
+                  Firebase to host arrival and departure data. Moment.js is used
+                  to retrieve and manipulate this information. This website will
+                  provide up-to-date information about various trains, namely
+                  their arrival times and how many minutes remain until they
+                  arrive at their station.
                 </p>
               </div>
             </div>
@@ -240,6 +254,7 @@
     <div class="section" id="contact">
       <div class="row">
         <div class="col m10 offset-m1 s12">
+          <br />
           <h3 id="contactForm" class="header text_b center">Contact Me</h3>
           <div class="row">
             <form class="col m8 offset-m2 s12">
@@ -249,8 +264,12 @@
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="name-input" type="text" class="validate" />
-
+                        <input
+                          id="name-input"
+                          type="text"
+                          class="validate"
+                          required
+                        />
                         <label for="name-input">Full Name</label>
                       </div>
                     </div>
@@ -261,7 +280,12 @@
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>
-                        <input id="email-input" type="email" class="validate" />
+                        <input
+                          id="email-input"
+                          type="email"
+                          class="validate"
+                          required
+                        />
                         <label for="email-input">Email</label>
                       </div>
                     </div>
@@ -275,6 +299,7 @@
                         <textarea
                           id="message-input"
                           class="materialize-textarea"
+                          required
                         ></textarea>
                         <label for="message-input">Message</label>
                       </div>
